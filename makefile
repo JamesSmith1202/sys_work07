@@ -10,3 +10,5 @@ main.o: main.c
 clean:
 	rm -rf *~
 	rm -rf *.o
+	rm run
+	rm numbers
