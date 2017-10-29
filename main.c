@@ -13,7 +13,7 @@ int generate_random(){
   if(read(fd,&i, sizeof(i)) < sizeof(i)){
     printf("%d: %s\n", errno, strerror(errno));
   }
-  if(close(fd) == -1){
+  if(close(fd)){
     printf("%d: %s\n", errno, strerror(errno));
   }
   return i;
